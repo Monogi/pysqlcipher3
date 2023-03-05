@@ -134,7 +134,7 @@ class AmalgationLibSQLCipherBuilder(build_ext):
             ext.define_macros.append(("inline", "__inline"))
 
             # Configure the linker
-            ext.extra_link_args.append("libeay32.lib")
+            ext.extra_link_args.append("libcrypto.lib")
             ext.extra_link_args.append('/LIBPATH:' + openssl_lib_path)
         else:
             ext.extra_link_args.append("-lcrypto")

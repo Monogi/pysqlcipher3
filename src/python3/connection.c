@@ -1694,7 +1694,7 @@ static struct PyMemberDef connection_members[] =
 
 PyTypeObject pysqlite_ConnectionType = {
         PyVarObject_HEAD_INIT(NULL, 0)
-        MODULE_NAME ".Connection",                      /* tp_name */
+        ".Connection",                      /* tp_name */
         sizeof(pysqlite_Connection),                    /* tp_basicsize */
         0,                                              /* tp_itemsize */
         (destructor)pysqlite_connection_dealloc,        /* tp_dealloc */
